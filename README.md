@@ -15,9 +15,13 @@ The solution does two things:
 You might want to do some selection on the export to create a Collection in Zotero. 
 For example, I created a collection `to_read` and `read` based on some small changes in the SQL query.
 
-Not all the fields from the CSV are mapped. I wanted to map the `Add` dates from Goodreads into the `Date Added` fields from Zotero, but this is not directly possible. I now store it in the `Abstract` field which is of course not where it belongs. If you want to spend time on it you could directly interact with the zotero.sqlite database and try to do an update SQL command to change it and update the Date Added with the info from the Abstract field. Do not forget to backup your zotero.sqlite if you do this.
+- Q: Why use RIS?
 
-Maybe I will actually write that code when I have more time.
+I find it realtively easy to read as it is just text. I also supports quite a lot of the fields we need.
+
+- Q: Can I see all my Goodreads data now in Zotero
+
+No, not all the fields from the CSV are mapped. I wanted to map the `Add` dates from Goodreads into the `Date Added` fields from Zotero, but this is not directly possible. I now store it in the `Abstract` field which is of course not where it belongs. If you want to spend time on it you could directly interact with the zotero.sqlite database and try to do an update SQL command to change it and update the `Date Added` with the info from the `Abstract` field. Do not forget to backup your zotero.sqlite if you do this.
 
 # Getting started
 
